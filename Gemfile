@@ -18,6 +18,7 @@ gem "pg"
 gem "puma"
 gem "rack-canonical-host"
 gem "rails", "~> 5.1.3"
+gem 'rapidfire'
 gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
 gem "simple_form"
