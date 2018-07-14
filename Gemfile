@@ -9,6 +9,7 @@ end
 
 ruby "2.4.4"
 
+gem 'alexa-rails'
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
 gem "flutie"
