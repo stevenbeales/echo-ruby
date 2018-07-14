@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 RSpec.configure do |config|
-  config.include ActionView::Helpers::TranslationHelper
+  config.include FactoryBot::Syntax::Methods
 end

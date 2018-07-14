@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 git_source(:github) do |repo_name|
@@ -5,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.4.1"
+ruby "2.4.4"
 
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
@@ -21,14 +23,15 @@ gem "sass-rails", "~> 5.0"
 gem "simple_form"
 gem "skylight"
 gem "sprockets", ">= 3.0.0"
-gem "suspenders"
+gem "suspenders", "= 1.45.0"
 gem "title"
+gem "tzinfo-data"
 gem "uglifier"
-
 
 group :development do
   gem "listen"
   gem "rack-mini-profiler", require: false
+  gem "rubocop"
   gem "spring"
   gem "spring-commands-rspec"
   gem "web-console"
@@ -39,14 +42,13 @@ group :development, :test do
   gem "bullet"
   gem "bundler-audit", ">= 0.5.0", require: false
   gem "dotenv-rails"
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.6"
 end
 
 group :test do
-  gem "capybara-webkit"
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
