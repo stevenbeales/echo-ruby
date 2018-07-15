@@ -1,10 +1,36 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.bundle/**/*'
+    - '.git/**/*'
+    - '.vscode/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/**/*'
+    - 'bin/**/*'
+    - 'doc/**/*'
+    - 'public/**/*'
+
+Layout/EmptyLines:
+  Enabled: false
+
+Layout/EndOfLine:
+  Enabled: false
+
+Layout/TrailingWhitespace:
+  Enabled: false
+
 Metrics/BlockLength:
   Enabled: false
 
 Metrics/LineLength:
-  Max: 120
+  Enabled: false
 
 Style/Documentation:
+  Enabled: false
+
+Style/Lambda:
   Enabled: false
 
 Style/MixinUsage:
@@ -12,3 +38,7 @@ Style/MixinUsage:
 
 Style/StringLiterals:
   Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
