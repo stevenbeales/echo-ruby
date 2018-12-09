@@ -1,6 +1,6 @@
 development: &default
   adapter: postgresql
-  database: echo-ruby_development
+  database: echo_ruby_development
   encoding: utf8
   min_messages: warning
   pool: <%= Integer(ENV.fetch("DB_POOL", 5)) %>
@@ -11,7 +11,7 @@ development: &default
 
 test:
   <<: *default
-  database: echo-ruby_test
+  database: echo_ruby_test
   username: fibro
   password: health
 

@@ -9,7 +9,6 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'd8b6ed80015e96acdfda6856cab5cf9e8f042bdfa507a3a6932243b35a3f43b19acaa81571590450c632515b4799621bf4fa83ef53da7f219f2547f1155938d4'
-  
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -117,10 +116,10 @@ Devise.setup do |config|
   # config.pepper = '04f7343c4362500b3d35a4b55d25a6ad795de3808bb3dd96cccf4fad254ec6fa4d3e7a65d44acaa23e296695b5e32aca511d3d3dc60a30776968d8f1a9e13393'
 
   # Send a notification to the original email when the user's email is changed.
-  # config.send_email_changed_notification = false
+  config.send_email_changed_notification = true
 
   # Send a notification email when the user's password is changed.
-  # config.send_password_change_notification = false
+  config.send_password_change_notification = true
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without

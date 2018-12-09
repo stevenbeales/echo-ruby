@@ -7,9 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.4.4"
-
-gem 'alexa-rails'
+gem "alexa-rails"
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
 gem "devise"
@@ -19,16 +17,15 @@ gem "jquery-rails"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
-gem "rails", "~> 5.1.3"
+gem "rails"
+gem "rake"
 gem 'rapidfire'
 gem "recipient_interceptor"
-gem "sass-rails", "~> 5.0"
 gem "simple_form"
 gem "skylight"
-gem "sprockets", ">= 3.0.0"
-gem "suspenders", "= 1.45.0"
+gem "sprockets"
+gem "suspenders"
 gem "title"
-gem "tzinfo-data"
 gem "uglifier"
 
 group :development do
@@ -43,12 +40,12 @@ end
 group :development, :test do
   gem "awesome_print"
   gem "bullet"
-  gem "bundler-audit", ">= 0.5.0", require: false
+  gem "bundler-audit", require: false
   gem "dotenv-rails"
   gem "factory_bot_rails"
   gem "pry-byebug"
   gem "pry-rails"
-  gem "rspec-rails", "~> 3.6"
+  gem "rspec-rails"
 end
 
 group :test do
